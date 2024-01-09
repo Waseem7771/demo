@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet"> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" as="style">
+
+  <title>GEN LAB</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+</head>
+<body>
+
+
+
+
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+
+
+
+
+   
+  <div id="loading">
+    <div id="spinner"></div>
+</div>
+<div id="particles-js"></div>
+<!-- <div id="box">
+    <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+    <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+    <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+    <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+    <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+    <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+</div> -->
+<a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">تفاصيل الفعالية</a>
+<a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">أنشطة المختبر</a>
+<a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">جدول المواعيد</a>
+<div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+    <h1>GEN LAB</h1>
+    <p id="p1">مختبر الابتكار" هو مساحة مصممة خصيصًا لتحفيز روح الابتكار والإبداع لدى فرق
+        العمل المشاركة. هذا المختبر مجهز بأحدث تقنيات الذكاء الاصطناعي ومجموعة
+        متنوعة من الألعاب التدريبية والبرامج التقنية، مما يخلق بيئة مثالية لتحويل الأفكار
+        الإبداعية إلى نماذج أولية واقعية. من خلال توفير هذه الموارد، نهدف إلى إلهام
+        المشاركين وتمكينهم من تجسيد ابتكاراتهم بشكل عملي وفعال.
+    </p>
+    <!-- <div id="menu">
+        <a onclick="showabout()">about</a>
+        <a onclick="showwork()">work</a>
+        <a onclick="showcontact()">contact</a>
+    </div> -->
+
+</div>
+<div id="work_container" class="container">
+    <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+    <h1>أنشطة المختبر</h1>
+    <section>
+       
+        <p>
+            <h2 style="font-weight: 400; color: #ffffff;margin-bottom: 10px; ">➢ محاضرات تعريفية تفاعلية:</h2>
+            <br>
+            <p style=" font-weight: 400; line-height: 1.6; color: #ffffff; margin-bottom: 20px;">
+             في مجال الابتكار والذكاء الاصطناعي تتضمن عروضاً حول
+            أحدث التطورات في هذا المجال، مع تشجيع المشاركة النشطة من الجمهور. تشمل
+            النقاشات حول تطبيقات الذكاء الاصطناعي في الحياة العملية، ورش عمل تفاعلية،
+            ومناقشة الآثار الأخلاقية والاجتماعية لهذه التكنولوجيا. الهدف هو تعزيز الفهم وتبادل
+            الأفكار حول الابتكارات في الذكاء الاصطناعي.
+        </p>
+            <br>
+            <h2 style="font-weight: 400; color: #ffffff;margin-bottom: 10px; "> ➢ ورش عمل تقنية تدريبية:</h2>
+            <br>
+            <p style=" font-weight: 400; line-height: 1.6; color: #ffffff; margin-bottom: 20px;">
+            ورش عمل تقنية تدريبية حول الذكاء الاصطناعي التوليدي تهدف إلى تعليم المشاركين
+            كيفية استخدام أحدث التقنيات لإنشاء محتوى جديد، مثل الفن الرقمي، الموسيقى،
+            وتوليد النصوص، باستخدام الشبكات العصبونية التوليدية ونماذج اللغة. هذه الورش
+            تركز على توفير المهارات العملية للابتكار في هذا المجال.
+            </p>
+            <br>
+            <h2 style="font-weight: 400; color: #ffffff;margin-bottom: 10px; "> ➢ أنترنت الأشياء:</h2>
+            <p style=" font-weight: 400; line-height: 1.6; color: #ffffff; margin-bottom: 20px;">
+            يتم من خلال هذا النشاط برمجة المتحكمات ذات الاحجام المختلفة، بعد تدريب
+            المشاركين على اساسيات بسيطة في برمجة الروبوت ليقوموا من خلال هذا النشاط
+            بعمل تحديات بين الفرق المتنافسة
+            اختبار قياس قدرات الابتكار
+            </p>
+            <h2 style="font-weight: 400; color: #ffffff;margin-bottom: 10px; "></p>➢ مسابقات وتحديات:</h2>
+            <br>
+            <p style=" font-weight: 400; line-height: 1.6; color: #ffffff; margin-bottom: 20px;">
+            مسابقات وتحديات الابتكار تتضمن فعاليات تنافسية تهدف إلى تشجيع المشا ركين على
+            تطوير حلول مبتكرة لمشكلات محددة. تتراوح هذه التحديات من تصميم منتجات جديدة،
+            تطوير تطبيقات تكنولوجية، إلى إيجاد حلول مستدامة للقضايا البيئية. غالبًا ما تجمع هذه
+            المسابقات بين الخبراء والمبتكرين من مختلف التخصصات، وتقدم جوائز للأفكار الأكثر
+            إبداعًا وتأثيرًا. تعزز هذه المسابقات الإبداع والتعاون، وتوفر منصة لعرض المواهب
+            والابتكارات الجديدة.
+            </p>
+            <br>
+            <h2 style="font-weight: 400; color: #ffffff;margin-bottom: 10px; "></p>➢ أحدث تقنيات الذكاء الاصطناعي</h2>
+            <br>
+            <p style=" font-weight: 400; line-height: 1.6; color: #ffffff; margin-bottom: 20px;">
+            أحدث تقنيات الذكاء الاصطناعي تتضمن الشبكات العصبية لمعالجة الصور والكلام،
+            وبرامج تحليل البيانات الكبيرة. تُستخدم لجعل الأجهزة أكثر ذكاءً وفعالية في مجالات مثل
+            القيادة الذاتية للسيارات والتعرف على الصوت.
+        </p>
+            <br>
+            <h2 style="font-weight: 400; color: #ffffff;margin-bottom: 10px; "> ➢ تقنيات الميتافيرس</h2>
+            <br>
+            <p style=" font-weight: 400; line-height: 1.6; color: #ffffff; margin-bottom: 20px;">
+            في ورشة عمل حول تقنيات الميتافيرس، يتم استكشاف وتعلم كيفية استخدام الواقع
+            الافتراضي والمعزز وأدوات العوالم الافتراضية. تركز هذه الورشة على تطبيق هذه التقنيات
+            في مجالات مثل التصميم، الترفيه، والتعليم، مع توفير تجارب عملية للمشاركين لإنشاء
+            محتوى افتراضي وتفاعلي.
+        </p>
+                        </p>
+       
+    </section>
+</div>
+<div id="about_container" class="container">
+        <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+        <h1 id="t1"> تفاصيل الفعالية</h1>
+        <section id="m1">
+            <h2 > مخرجات المختبر:</h2>
+            <p style="font-size: 16px;">
+               
+                •	مواكبة أحدث التقنيات الناشئة والداعمة للابتكار لدولة الإمارات العربية المتحدة 
+                <br>
+                •	موظفين قادرين على تخيل أثر تكنولوجيا الميتافيرس والذكاء الاصطناعي على أعمالهم 
+                <br>
+                •	متدربين قادرين على تحويل الافكار المبتكرة إلى واقع ملموس من خلال النماذج الأولية 
+                <br>
+                •	تعزيز روح التنافسية بين فرق العمل للوصول النتائج المرجوة من الابتكار 
+                <br>
+                •	تعزيز روح التعاون بين اعضاء الفريق الواحد لتحقيق الفوز بالمراكز المتقدمة
+                <br>
+                <h2> مزايا المختبر:</h2>
+                <br>
+                •	مدربون ومشرفون خبراء في مجال الذكاء الاصطناعي والابتكار والتقنيات الناشئة 
+                <br>
+                •	توفير أجهزة VR حديثة (٩أجهزة كحد أقصى)
+                <br>
+                •	توفير طابعات ثلاثية الأبعاد 
+                <br>
+                •	توفير ألعاب الليغو 
+                <br>
+                •	توفير البرمجيات الخاصة بالمسابقات 
+                <br>
+                •	التصوير الاحترافي (فيديو + صور) لكل فعاليات المختبر
+                
+                
+            </p>
+        </section>
+
+    </div>
+      <div id="contact_container" class="container">
+        <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+        <h1 style="direction: rtl; align-items: right;">جدول المواعيد</h1>
+        <section>
+            
+                <table class="tg">
+                <thead>
+                  <tr>
+                    <th class="tg-zw5y" >الفترة<br>الخامسة</th>
+                    <th class="tg-c3ow">الفترة<br>الرابعة</th>
+                    <th class="tg-c3ow">الفترة<br>الثالثة</th>
+                    <th class="tg-c3ow">الفترة<br>الثانية</th>
+                    <th class="tg-c3ow">الفترة<br>الأولى</th>
+                    <th class="tg-c3ow" colspan="2" rowspan="2"></th>
+                  </tr>
+                  <tr>
+                    <th class="tg-c3ow">02:30-02:00</th>
+                    <th class="tg-c3ow">02:00-12:00</th>
+                    <th class="tg-c3ow">12:00-11:00</th>
+                    <th class="tg-c3ow">11:00-10:00</th>
+                    <th class="tg-c3ow">10:00-08:00</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-c3ow" style="background-color: rgba(230,164,83,255);">The Gain</td>
+                    <td class="tg-c3ow" style="background-color: rgba(230,164,83,255);">Brace Yourself</td>
+                    <td class="tg-c3ow" style="background-color: rgba(230,164,83,255);">Take A Break</td>
+                    <td class="tg-c3ow" style="background-color: rgba(230,164,83,255);">Get Involved</td>
+                    <td class="tg-c3ow" style="background-color: rgba(230,164,83,255);">Ignite &amp; Inspier</td>
+                    <td class="tg-c3ow" style="background-color: rgba(230,164,83,255);">اسم الفقرة</td>
+                    <td class="tg-c3ow" rowspan="2" style="background-color: rgba(204,153,0,255);">اليوم<br>الأول</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-c3ow" style="background-color: rgba(230,164,83,255);">اختيار الفائزين</td>
+                    <td class="tg-c3ow" style="background-color: rgba(230,164,83,255); color: black;">مسابقة الذكاء<br>الاصطناعي<br>التوليدي</td>
+                    <td class="tg-c3ow" style="background-color: rgba(230,164,83,255);">استراحة</td>
+                    <td class="tg-c3ow" style="background-color: rgba(230,164,83,255);">ورشة تفاعلية<br>عن أحدث<br>التقنيات في<br>الذكاء<br>الاصطناعي<br>التوليدي</td>
+                    <td class="tg-c3ow" style="background-color: rgba(230,164,83,255);">محاضرة<br>تعريفية<br>حول أهمية<br>الابتكار<br>وأساسيات<br>الذكاء<br>الاصطناعي</td>
+                    <td class="tg-c3ow" style="background-color: rgba(230,164,83,255);">الوصف</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-c3ow" style="background-color: rgba(175,175,186,255);">Last Team Standing</td>
+                    <td class="tg-c3ow" style="background-color: rgba(175,175,186,255);">Last Chance</td>
+                    <td class="tg-c3ow" style="background-color: rgba(175,175,186,255);">Recharge</td>
+                    <td class="tg-c3ow" style="background-color: rgba(175,175,186,255);">Dive Deeper</td>
+                    <td class="tg-c3ow" style="background-color: rgba(175,175,186,255);">One More Time</td>
+                    <td class="tg-c3ow" style="background-color: rgba(175,175,186,255);">اسم<br>الفقرة</td>
+                    <td class="tg-c3ow" rowspan="2" style="background-color: rgba(127,127,127,255);">اليوم<br>الثاني</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-c3ow" style="background-color: rgba(175,175,186,255);">اختيار الفائزين</td>
+                    <td class="tg-c3ow" style="background-color: rgba(175,175,186,255);">Among Us Via VR</td>
+                    <td class="tg-c3ow" style="background-color: rgba(175,175,186,255);">استراحة</td>
+                    <td class="tg-c3ow" style="background-color: rgba(175,175,186,255);">ورشة تفاعلية<br>عن تقنيات<br>الميتافيرس</td>
+                    <td class="tg-c3ow" style="background-color: rgba(175,175,186,255);">ورشة عمل<br>حول<br>التفكير<br>التصميمي<br>باستخدام<br>إنترنت<br>الأشياء</td>
+                    <td class="tg-c3ow" style="background-color: rgba(175,175,186,255);">الوصف</td>
+                  </tr>
+                </tbody>
+                </table>
+            
+        </section>
+    </div>
+    <div id="footer">
+        made on earth by  <br> <a href="https://aibrains.com">Ai Brains</a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- scripts -->
+
+
+<script src="particles.js"></script>
+<script src="js/app.js"></script>
+<script src="index.js"></script>
+<!-- stats.js -->
+<!-- <script src="js/lib/stats.js"></script> -->
+<!-- <script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script> -->
+
+</body>
+</html>
